@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                Combat Tracker
+            </a>
+        </div>
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Table to display data -->
+    <table id="cttable" class="table is-fullwidth">
+        <thead>
+            <tr>
+                <th>Name</th>
+                    <th onclick="sortTable()"id="init-header">Init ▼</th>
+                <th>Hp</th>
+                <th>Tmp</th>
+                <th>Wnds</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src ="/js/socket.io.js"></script>
+    <script src="/js/playerdata.js"></script>
+    <script src="/js/playerlinks.js"></script>
+    <script src="/js/combattracker.js"></script>
+</body>
+</html>

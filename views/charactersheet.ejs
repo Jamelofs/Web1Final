@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D&D 5e Character Sheet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    /* Basic styles (You can expand upon these) */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .character-sheet {
+      width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Add more styles for different sections of the character sheet */
+  </style>
+</head>
+<body>
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/playerdata.js"></script>
+  <script src="/js/playerlinks.js"></script>
+  <script src="/js/charactersheet.js"></script>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            Combat Tracker
+        </a>
+    </div>
+    <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+    </div>
+</nav>
+<div class="character-sheet">
+  <h1>Character Sheet</h1>
+
+  <!-- Character Information Section -->
+  <section class="character-info">
+    <h2>Character Information</h2>
+    <p><strong>Name:</strong> Your Character Name</p>
+    <p><strong>Race:</strong> Your Character Race</p>
+    <p><strong>Class:</strong> Your Character Class</p>
+    <!-- Display other character details using paragraphs or appropriate HTML elements -->
+  </section>
+
+  <!-- Abilities Section -->
+  <section class="abilities">
+    <h2>Abilities</h2>
+    <ul>
+      <li><strong>Strength:</strong> A measure of muscle, physical power, and carrying capacity.</li>
+      <li><strong>Dexterity:</strong> Measures agility, reflexes, and balance.</li>
+      <li><strong>Constitution:</strong> Represents health, stamina, and vital force.</li>
+      <li><strong>Intelligence:</strong> Measures reasoning, memory, and learning ability.</li>
+      <li><strong>Wisdom:</strong> Reflects perception, intuition, and insight.</li>
+      <li><strong>Charisma:</strong> Determines force of personality, persuasiveness, and leadership.</li>
+      <!-- Add spaces for ability score modifiers -->
+      <li><strong>Strength Modifier:</strong> </li>
+      <li><strong>Dexterity Modifier:</strong> </li>
+      <li><strong>Constitution Modifier:</strong> </li>
+      <li><strong>Intelligence Modifier:</strong> </li>
+      <li><strong>Wisdom Modifier:</strong> </li>
+      <li><strong>Charisma Modifier:</strong> </li>
+    </ul>
+  </section>
+
+  <!-- Additional Character Details -->
+  <section class="additional-details">
+    <h2>Additional Details</h2>
+    <p><strong>AC (Armor Class):</strong> </p>
+    <p><strong>Initiative:</strong> </p>
+    <p><strong>Speed:</strong> </p>
+    <p><strong>Passive Perception:</strong> </p>
+  </section>
+
+  <!-- Add more sections for skills, equipment, spells, etc. -->
+
+</div>
+
+</body>
+</html>
